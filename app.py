@@ -7,10 +7,7 @@ import os
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")
 def fetch_poster(movie_id):
     url = f"https://api.themoviedb.org/3/movie/{movie_id}"
-    # params = {
-    #     "api_key": "ee055a0fb589bb03d502e6b7430b1929",
-    #     "language": "en-US"
-    # }
+  
     params = {
         "api_key": TMDB_API_KEY,
         "language": "en-US"
